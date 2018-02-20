@@ -12,6 +12,7 @@
 		152B7FFE20302CE5008BDB69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 152B7FFD20302CE5008BDB69 /* Assets.xcassets */; };
 		152B800120302CE5008BDB69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152B7FFF20302CE5008BDB69 /* LaunchScreen.storyboard */; };
 		152B800920303346008BDB69 /* EmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152B800820303346008BDB69 /* EmojiTableViewController.swift */; };
+		15571C33203AA848009FAAF8 /* EmojiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15571C32203AA848009FAAF8 /* EmojiViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		152B800020302CE5008BDB69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		152B800220302CE5008BDB69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		152B800820303346008BDB69 /* EmojiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewController.swift; sourceTree = "<group>"; };
+		15571C32203AA848009FAAF8 /* EmojiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				152B7FF620302CE5008BDB69 /* AppDelegate.swift */,
 				152B800820303346008BDB69 /* EmojiTableViewController.swift */,
+				15571C32203AA848009FAAF8 /* EmojiViewController.swift */,
 				152B7FFA20302CE5008BDB69 /* Main.storyboard */,
 				152B7FFD20302CE5008BDB69 /* Assets.xcassets */,
 				152B7FFF20302CE5008BDB69 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15571C33203AA848009FAAF8 /* EmojiViewController.swift in Sources */,
 				152B800920303346008BDB69 /* EmojiTableViewController.swift in Sources */,
 				152B7FF720302CE5008BDB69 /* AppDelegate.swift in Sources */,
 			);
@@ -280,7 +284,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.developer.zell.Emoji-Dictionary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -295,7 +299,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.developer.zell.Emoji-Dictionary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
