@@ -60,6 +60,18 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A racecar sponsored by Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Dm-k9-Bkg">
                                 <rect key="frame" x="10" y="636" width="355" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birth Year: 2013" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5n-iL-T8P">
+                                <rect key="frame" x="126.5" y="607" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Transportation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kei-w6-WrX">
+                                <rect key="frame" x="91.5" y="578" width="191.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -67,15 +79,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="7Dm-k9-Bkg" firstAttribute="top" secondItem="r5n-iL-T8P" secondAttribute="bottom" constant="8" id="XEw-Zq-pYS"/>
                             <constraint firstItem="fxy-SV-kxh" firstAttribute="top" secondItem="QoC-Cx-DTR" secondAttribute="top" constant="20" id="bba-04-zXY"/>
+                            <constraint firstItem="r5n-iL-T8P" firstAttribute="top" secondItem="kei-w6-WrX" secondAttribute="bottom" constant="8" id="bhj-1G-Ql5"/>
                             <constraint firstItem="7Dm-k9-Bkg" firstAttribute="leading" secondItem="QoC-Cx-DTR" secondAttribute="leading" constant="10" id="e9d-cn-nHg"/>
                             <constraint firstItem="QoC-Cx-DTR" firstAttribute="bottom" secondItem="7Dm-k9-Bkg" secondAttribute="bottom" constant="10" id="kV7-XH-xM9"/>
+                            <constraint firstItem="r5n-iL-T8P" firstAttribute="centerX" secondItem="ygp-PC-480" secondAttribute="centerX" id="m7y-Ju-cAJ"/>
                             <constraint firstItem="fxy-SV-kxh" firstAttribute="centerX" secondItem="ygp-PC-480" secondAttribute="centerX" id="nBq-mb-uCI"/>
+                            <constraint firstItem="kei-w6-WrX" firstAttribute="centerX" secondItem="ygp-PC-480" secondAttribute="centerX" id="nx1-Fk-cJj"/>
                             <constraint firstItem="QoC-Cx-DTR" firstAttribute="trailing" secondItem="7Dm-k9-Bkg" secondAttribute="trailing" constant="10" id="w1F-7R-0ce"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QoC-Cx-DTR"/>
                     </view>
                     <connections>
+                        <outlet property="birthLabel" destination="r5n-iL-T8P" id="LdQ-TF-4Wm"/>
+                        <outlet property="categoryLabel" destination="kei-w6-WrX" id="zRk-4z-W8P"/>
                         <outlet property="emojiDefinitionLabel" destination="7Dm-k9-Bkg" id="1TS-eB-yej"/>
                         <outlet property="emojiLabel" destination="fxy-SV-kxh" id="OOd-l4-ve9"/>
                     </connections>

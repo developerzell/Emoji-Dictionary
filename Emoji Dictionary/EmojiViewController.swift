@@ -10,21 +10,19 @@ import UIKit
 
 class EmojiViewController: UIViewController {
     
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var birthLabel: UILabel!
     @IBOutlet weak var emojiLabel: UILabel!
     @IBOutlet weak var emojiDefinitionLabel: UILabel!
-    var emoji = ""
+    var emoji:Emoji = Emoji()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        emojiLabel.text = emoji
-        if emoji == "🥑" {
-            emojiDefinitionLabel.text = "A nice ripe Avacado"
-        } else if emoji == "⛪️" {
-            emojiDefinitionLabel.text = "A church with stained glass"
-        } else if emoji == "😀" {
-            emojiDefinitionLabel.text = "A happy smiling face"
-        }
+        emojiLabel.text = emoji.theEmoji
+        emojiDefinitionLabel.text = emoji.def
+        birthLabel.text = "Birth Year: \(emoji.releaseYear)"
+        categoryLabel.text = "Category: \(emoji.category)"
     }
     
     
